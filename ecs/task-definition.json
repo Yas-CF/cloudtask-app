@@ -1,0 +1,18 @@
+{
+  "family": "cloudstak-api",
+  "containerDefinitions": [
+    {
+      "name": "cloudstak-api-container",
+      "image": "202533506302.dkr.ecr.us-east-1.amazonaws.com/ecr-cloudstak-api:latest",
+      "memory": 512,
+      "cpu": 256,
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "hostPort": 80
+        }
+      ]
+    }
+  ]
+}

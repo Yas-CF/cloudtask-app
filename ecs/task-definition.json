@@ -1,5 +1,7 @@
 {
   "family": "cloudstak-api",
+  "executionRoleArn": "arn:aws:iam::202533506302:role/ecsTaskExecutionRole",
+  "networkMode": "awsvpc",
   "containerDefinitions": [
     {
       "name": "cloudstak-api-container",
@@ -10,9 +12,20 @@
       "portMappings": [
         {
           "containerPort": 80,
-          "hostPort": 80
+          "hostPort": 80,
+          "protocol": "tcp"
         }
       ]
     }
-  ]
+  ],
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "networkConfiguration": {
+    "awsvpcConfiguration": {
+      "subnets": ["subnet-00f00d18def29693c"],
+      "securityGroups": ["sg-04b97bb3708241dc5"],
+      "assignPublicIp": "ENABLED"
+    }
+  }
 }

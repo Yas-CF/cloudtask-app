@@ -5,7 +5,7 @@
   "containerDefinitions": [
     {
       "name": "cloudstak-api-container",
-      "image": "202533506302.dkr.ecr.us-east-1.amazonaws.com/ecr-cloudstak-api:latest",
+      "image": "202533506302.dkr.ecr.us-east-1.amazonaws.com/ecr-cloudstack-api:latest",
       "memory": 512,
       "cpu": 256,
       "essential": true,

@@ -1,5 +1,5 @@
 {
-  "family": "task-cloudstak",
+  "family": "task-cloudstak-",
   "executionRoleArn": "arn:aws:iam::202533506302:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
   "containerDefinitions": [

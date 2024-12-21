@@ -4,7 +4,7 @@
   "networkMode": "awsvpc",
   "containerDefinitions": [
     {
-      "name": "cluster-cloudstak",
+      "name": "ecr-cloudstack-api",
       "image": "202533506302.dkr.ecr.us-east-1.amazonaws.com/ecr-cloudstack-api:latest",
       "memory": 512,
       "cpu": 256,
